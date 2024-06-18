@@ -62,7 +62,7 @@ header .titre p{
 
 /* permet d'ajuster la largeur de l'image pour éviter qu'elle ne chevauche l'icône burger lorsque l'on est sur des écrant très petit (360px de large) */
 .navbar-brand img{
-    
+
 }
 
 /* Ce code permet de modifier la couleur de l'icône burger : stroke='rgba(255, 165, 0, 1) et de grossir les 3 trais : stroke-width='5'*/

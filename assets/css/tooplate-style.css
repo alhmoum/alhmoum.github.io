@@ -35,7 +35,15 @@ body {
   border-radius: 50px;
   letter-spacing: 0.2px;
 }
-
+.medium-text {
+  color: #5b5b5b ;
+  font-weight: bold;
+  padding: 8px 0px;
+  border-radius: 50px;
+  letter-spacing: 0.2px;
+  font-size: 2rem;
+  
+}
 ul {
   margin: 0;
   padding: 0;
@@ -89,7 +97,13 @@ h3,
 b, strong {
   font-weight: bold;
 }
+.mt-n1 {
+  margin-top: -6.25rem !important;
+}
+.about-text {
 
+  margin-top: -5.25rem !important;
+}
 .custom-btn {
   background: #eee;
   color: #5b5b5b;
@@ -109,7 +123,7 @@ b, strong {
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #ccf381;
+  background: #b9ec5a;/* #ccf381 */
   color: #4831d4!important;
 }
 
@@ -121,7 +135,7 @@ b, strong {
   display: inline-block;
   vertical-align: top;
   margin-top: 5px;
-  min-width: 460px;
+  min-width: 480px;
   position: relative;
 }
 
@@ -129,7 +143,10 @@ b, strong {
   color:#4831d4;/*#ffc200;*/
   
 }
-
+.dark-mode .animated-item {
+  color:#b9ec5a;/*#ffc200;*/
+  
+}
 .animated-item {
   font-size: 38px;
   line-height: inherit;
@@ -308,13 +325,13 @@ b, strong {
   color: rgba(255, 255, 255, 0.8);
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #4831d4;
+  color: #b9ec5a !important;
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
   background: #0c0c0d;
   border-bottom: 1px solid #1f1f1f;
 }
-.dark-mode .small-text {
+.dark-mode .small-text, .dark-mode .medium-text{
   background: #0d0c15;
   color: #ffffff;
 }
