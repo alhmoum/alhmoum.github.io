@@ -7,6 +7,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,17 +20,20 @@
      <!-- <link rel="stylesheet" href="assets/css/bootstrap-grid-system.css"> -->
  
     <!-- MAIN STYLE -->
-     <link rel="stylesheet" href="assets/css/stylexx.css">
+     <link rel="stylesheet" href="assets/css/style.css">
      <link rel="stylesheet" href="assets/css/tooplate-style.css">
 </head>
 
 
 <body>
-    <header class="" id="site-headerx">
+    <header class="" id="header">
          <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>  alhmoum </a>
+            <!-- <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>  alhmoum </a> -->
+            <a href="index.html" class="text_logo"><strong>Grafiprod.Dev</strong></a>
+						
+                        
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -40,10 +45,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a href="#about" class="nav-link"><span data-hover="About">A propos</span></a>
+                        <a href="#about" class="nav-link"><span data-hover="A propos">A propos</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#project" class="nav-link"><span data-hover="Projects">Projets</span></a>
+                        <a href="#project" class="nav-link"><span data-hover="Projets">Projets</span></a>
                     </li>
                     <li class="nav-item">
                         <a href="#resume" class="nav-link"><span data-hover="Resumé">Resumé</span></a>
@@ -68,7 +73,7 @@
 
     <main id="main" tabindex="-1">
       
-    <!-- ABOUT -->
+    <!-- SATRT SECTION: About-->
     <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
         <div class="container">
             <div class="row">
@@ -87,10 +92,12 @@
 
                         <p>Développeur Web Créatif, PHP Back-end mais également à l'aise en Front-end, Passionné en Design et en Informatique, je me tiens constamment en veille et en auto apparentissage.
                             Construire un produit réussi est un défi.</p>
-                        
-                        <div class="custom-btn-group mt-4">
-                          <a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Mon CV</a>
-                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Me contacter</a>
+
+                            
+                        <div class="custom-btn-group mt-5">
+                            <a href="https://fr.linkedin.com/in/alhmoumdev" target="_blank" class="btn mr-lg-2 custom-btn"><i class='uil uil-linkedin'></i> Linkedin</a>
+                            <a href="https://github.com/alhmoum" target="_blank" class="btn mr-lg-2 custom-btn"><i class='uil uil-github'></i> Github</a>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg-blue custom-btn-link"><i class ='uil uil-envelope-edit'></i> Me contacter</a>
                         </div>
                     </div>
                 </div>
@@ -104,29 +111,113 @@
             </div>
         </div>
     </section>
+    <!-- END SECTION: About-->
+     <!-- PROJECTS -->
+     <section class="project py-5" id="project" style="display: none;">
+        <div class="container">
+                
+                <div class="row">
+                  <div class="col-lg-11 text-center mx-auto col-12" >
 
+                      <div class="col-lg-8 mx-auto">
+                        <h2>Projets sur lesquels je travaille</h2>
+                      </div>
+
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="assets/img/project/project-image01.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="assets/img/project/project-image02.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="assets/img/project/project-image03.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="assets/img/project/project-image04.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+
+                        <div class="item">
+                          <div class="project-info">
+                            <img src="assets/img/project/project-image05.png" class="img-fluid" alt="project image">
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+        </div>
+    </section>
 
 
     </main>
-
-    <footer class = "scrolled" data-section = "footer" tabindex="-1">
-        <div class="container">
-            <div class="row">
-
-                 <div class="col-lg-12 col-12"> 
-                    <hr class="border-2 border-top border-dark" />                               
-                     <p class="copyright-text text-center">Copyright &copy; 2024 alhmoum.github.io . Tous droits réservés</p>
-                     <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://alhmoum.github.io">Lhassan Alhmoum</a></p>
-                 </div>
-                 
+        <!-- Footer -->
+        <footer id="footer" class = "scrolled" data-section = "footer" tabindex="-1">
+            <div class="container">
+                <div class="row">
+                     <div class="col-lg-8 col-8" id="contact"> 
+                          <h2>Get in touch</h2>
+                          <form method="post" action="#">
+                              <div class="fields">
+                                  <div class="field half">
+                                      <input type="text" name="name" id="name" placeholder="Nom" />
+                                  </div>
+                                  <div class="field half">
+                                      <input type="email" name="email" id="email" placeholder="Email" />
+                                  </div>
+                                  <div class="field">
+                                      <textarea name="message" id="message" placeholder="Message"></textarea>
+                                  </div>
+                              </div>
+                              <ul>
+                                  <li><input type="submit" value="Envoyer" class="btn custom-btn custom-btn-bg-blue custom-btn-link"/></li>
+                              </ul>
+                          </form>
+                     </div>
+                     <div class="col-lg-4 col-4"> 
+                          <h2>Follow</h2>
+                          <ul class="icons">
+                             <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                              <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                              <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+                              <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                          </ul>
+                     </div>
+                     
+                </div>
+            <div class="container">
+                <div class="row">
+                    <ul class="copyright">
+                        <li> &copy; 2024 Tous droits réservés</li><li> <a href="index.html" class="text_logo"><strong>Grafiprod.Dev</strong> <span>| Lhassan Alhmoum</span></a>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
-       </div>
-     
+           </div>
+        </footer>
 
-    </footer>
-    <!-- Script Bundle -->   
+
+
+
+
+
+    <!-- Script Bundle --> 
+        <script src="assets/js/jquery-3.3.1.min.js"></script>  
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/custom.js"></script>
 </body>
 </html>
